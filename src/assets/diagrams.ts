@@ -91,5 +91,4 @@ const diagrams: ElectricDiagramArray = [
 		key: 1,
 	},
 ]
-sessionStorage.setItem('d', 1)
 export default diagrams

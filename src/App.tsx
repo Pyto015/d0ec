@@ -3,8 +3,10 @@ import diagrams from './assets/diagrams'
 import Element from './components/element'
 import { ElectricDiagramItem } from './assets/interfaces'
 const App = () => {
+	//@ts-ignore
 	const daar = JSON.parse(sessionStorage.getItem('diagrams'))
-		? JSON.parse(sessionStorage.getItem('diagrams'))
+		? //@ts-ignore
+		  JSON.parse(sessionStorage.getItem('diagrams'))
 		: diagrams
 	console.log(daar)
 	return (
