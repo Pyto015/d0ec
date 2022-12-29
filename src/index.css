@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	p {
+		@apply p-8 bg-zinc-100 rounded-md shadow-lg text-zinc-900 font-sans;
+	}
+	pre {
+		@apply font-hack;
+	}
+}
+
+@font-face {
+	font-family: 'Hack';
+	src: url('./assets/fonts/hack.otf');
+}
